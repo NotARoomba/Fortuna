@@ -4,7 +4,7 @@ After=dbus.service
 Wants=dbus.service
 
 [Service]
-ExecStart=npx forever start /usr/share/fortuna/fortuna.js
+ExecStart=forever start /usr/share/fortuna/fortuna.js
 
 [Install]
 WantedBy=default.target
