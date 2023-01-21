@@ -2,7 +2,6 @@
 Description=An AI powered daily quote generator!
 
 [Service]
-Type=notify
 ExecStart=node /usr/share/fortuna/fortuna.js
 
 [Install]
