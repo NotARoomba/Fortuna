@@ -1,10 +1,10 @@
 const { Configuration, OpenAIApi } = require("openai");
 const notifier = require('node-notifier');
-require('dotenv').config({path:'./secrets.env'})
+require('dotenv').config({path:'./data.env'})
 
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.O,
 });
 const openai = new OpenAIApi(configuration);
 
@@ -19,7 +19,7 @@ const openai = new OpenAIApi(configuration);
         title: "Daily Quote",
         message: quote[0].trim() + ' -' + quote[1].trim()
       });
-      if (process.env.DAILY_FACT) {
+      if (process.env.D) {
         const fact = await openai.createCompletion({
             model: "text-davinci-003",
             prompt: "write a random fact",
