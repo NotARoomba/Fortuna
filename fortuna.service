@@ -4,7 +4,7 @@ After=dbus.service
 Wants=dbus.service
 
 [Service]
-Type=forking
+Type=oneshot
 ExecStart=/usr/bin/node /usr/share/fortuna/fortuna.js
 
 [Install]
