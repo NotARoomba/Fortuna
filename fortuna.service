@@ -1,0 +1,9 @@
+[Unit]
+Description=An AI powered daily quote generator!
+
+[Service]
+Type=notify
+ExecStart=fortuna
+
+[Install]
+WantedBy=multi-user.target
