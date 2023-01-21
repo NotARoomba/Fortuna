@@ -1,6 +1,6 @@
 const { Configuration, OpenAIApi } = require("openai");
 const notifier = require('node-notifier');
-require('dotenv').config({path:'./data.env'})
+require('dotenv').config({path:__dirname+'/data.env'})
 
 
 const configuration = new Configuration({
