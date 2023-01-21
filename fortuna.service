@@ -1,8 +1,11 @@
 [Unit]
 Description=An AI powered daily quote generator!
+After=dbus.service
+Wants=dbus.service
 
 [Service]
+Type=notify
 ExecStart=node /usr/share/fortuna/fortuna.js
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
