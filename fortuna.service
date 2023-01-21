@@ -1,7 +1,5 @@
 [Unit]
 Description=An AI powered daily quote generator!
-After=dbus.service
-Wants=dbus.service
 
 [Service]
 Type=oneshot
