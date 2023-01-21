@@ -5,7 +5,7 @@ Wants=dbus.service
 
 [Service]
 Type=oneshot
-ExecStart=node /usr/share/fortuna/fortuna.js
+ExecStart=/usr/bin/node /usr/share/fortuna/fortuna.js
 
 [Install]
 WantedBy=default.target
