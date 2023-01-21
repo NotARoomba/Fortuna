@@ -4,7 +4,7 @@ After=dbus.service
 Wants=dbus.service
 
 [Service]
-Type=notify
+Type=oneshot
 ExecStart=node /usr/share/fortuna/fortuna.js
 
 [Install]
