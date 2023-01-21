@@ -7,7 +7,10 @@ const configuration = new Configuration({
   apiKey: process.env.O,
 });
 const openai = new OpenAIApi(configuration);
-
+notifier.notify({
+    title: "Daily Quote",
+    message: "a"
+  });
 (async function () {
     const completion = await openai.createCompletion({
         model: "text-davinci-003",
